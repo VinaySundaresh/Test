@@ -1,0 +1,280 @@
+1.Explain Java and Javac
+->Java is object oriented programming language.
+->javac is a compiler that is used to convert the human readable program i.e .java file to .class file(byte code).
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Explain JDK,JRE and JVM
+
+->JDK - java development kit is a software development environment that is required to run java programs.
+->JRE - java runtime environmnet is a software development tool that is used to run java application.
+->JVM - java virtual machine is a one which is used to execute the compiled program i.e .class file to get an output.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.Explain Arrays and Limitations of arrays
+
+->Arrays is a sequence of elements(reference) of a same datatype which is used to store and retrive using index whenever it is necessary.
+->Limitations
+	*Array can only store same set of elements with same datatype.
+	*Array will have fixed size.
+
+Ex. String item1="Tomato";
+    String item2="Carrot";
+    String item3="Beans";
+    String item4="radish";
+    String item5="Ginger";
+
+  //array named vegetables stores the reference of the variables of items
+
+   String[] vegetables={item1,item2,item3,item4,item5};
+  
+ //printing a value of an array using index method.
+
+   System.out.println("The array element at index 1 is "+vegetables[1]);
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Explain class,object and Signature of the class
+
+->Class is a template of the object which is defined by using a keyword called "class" followed by classname.
+
+Ex. class Animals{
+    }
+
+->Object -object is a one that which it exists in the real world.Object can also be defined as the instance of the class.
+
+Ex. class vehicle{
+	}
+
+//in above example vehicle is an object.
+
+-> Signature of the class - class can be defined by using class key word followed by classname and open with closed flower brackets/literals
+
+   Syntax: class className{
+              public static void main(String[] args)
+		{
+		
+		}
+           }
+   *inside the class we can define our methods and state/variables.
+   * it also has main method where the execution of the class starts.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5.Difference between .java and .class file
+
+->The major difference between .java and .class files are whenever we compile the .java file using javac command we get .class file.
+->.java file is writtern in normal english and as well as human readable format whereas .class file is converted into amchine level language i.e in byte code.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6.Explain method signature
+
+->Method signature:  access_specifier non_access_specifier return_type method_name (parameters)
+			{
+				//set of statements;
+			}
+
+	*access_specifiers : these are the one where we can restrict the usage of the method outside or inside the class.
+                             we have mainly 4 different access specifiers i.e public,protected,package default,private.
+     
+        *non_access_specifiers :these are the one which is used to define a constant method/variables
+			        In java we have 3 different non_access_specifiers i.e static,friend,abstract.
+	
+	*return_type : returntype is basically a value that a method can return after its execution.
+                       In java mainly we have two different return types 
+			1.void (which doesnot return anything)
+			2.primitive datatypes(byte,int,short,long,char,boolean,float,double)
+
+	*method_name :It is the name of the method which always starts with a lowercase letter.
+   
+        *parameters : These are the arguements that can be passed whenever we call these method to perform some specific operations.
+                      The number of parameters depends on the requirements as it is separated by comma.
+                      Syntax : (datatype parameterName)
+
+        *set of statements : The scope of the method can be done inside these two literals{ }.
+      			     The operations performed by using a particular method could be writtern inside these flower braces.
+
+Ex.
+   public static void add(int a,int b)
+   {
+    int sum=0;
+    sum=a+b;
+    System.out.println("The addition of "+a+" and "+b+"is"+sum);
+  }
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7.What is java
+
+->Java is a high-level,object oriented programming language which is platform independent.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+8.List java IDE'S
+
+->Eclipse,NetBeans,NotePad++
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9.What are variables ?Explain its types?
+
+->variables are the one which is used to store the information and retrive that information whenever we require it.
+
+Syntax: datatype variable_name=value; //declaring and assigning the value for it.
+
+Types of variable
+1.static - whenevr the variable we declare it using a static key word it is treated as constant value throught the program execution.
+
+Ex.static int a=10;
+
+2.non-static -Whenever the variable is declared without any static keyword ,that can be changed anywhere inside the program.
+
+Ex.int a=10;
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+11.What are datatypes and explain its types.
+
+->Datatypes are the one which is used to store the type of the data/information inside the variable we declare.
+
+Syntax: datatype variable_name=value; //declaring and assigning the value for it.
+
+->Datatype is of 2 types.
+
+1.primitive-we have 8 different types of primitive data type(byte ,int,short,long,float,double,char,boolean)
+
+Ex. byte a=10;
+    int a=20;
+    short k=24;
+    long phoneNo=9620689808l;
+    float price=129.34f;
+    double percentage= 90.08;
+    char a='A';
+    boolean choice=true;
+
+2.non-primitive -we have a non-primitive datatype called String(A sequence of characters).
+
+Ex.String name="Vinay";
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10.What is a class variable
+
+->class variable is called as a data member or a varibale that is declared inside the class.
+
+Ex. class Person{
+
+    String name="Vinay";
+    long phoneno=9620689808f";
+    }
+
+  In the above example name and phoneno is a class variable.
+  To access this class variable we need to use classname.variable name
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+12.List the java features
+
+->Java is a platform independent language i.e write once run anywhere.
+->Java is a object oriented programming language
+->Java is a open source where annyone can use it.
+->Java is easy to learn and understand
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+13.What is the base class of all the classes
+->The class which contains the main method is considered as the base class of all the class since the execution starts from main method only.
+->In point of inheritance a base class can be called as parent class which shares the property for the child class.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14.What are methods and type of methods in java.
+
+->Methods are the one which is a set of statements that is executed together whenever we call by it name.A method can be writtern to use some set of statements more than once 
+to reduce the number of repeated line in the code.
+
+Ex.static void printArray(int[] arr)
+	{
+		//for loop 
+	  for(int i=0;i<arr.length;i++)
+	  {
+	    System.out.println("The element at index "+i+"is"+arr[i]);
+           }
+         }
+
+Types of methods:
+1.static method :it is declared by using static keyword where we can access the methods using classname with dot operator.
+Ex. classname.method();
+
+2.non-static method :It is a type of a method where we can access the methods using only the object of the class.
+
+Ex.class_object.method();
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15.Write one program which includes variables,methods,arrays,if and for loops
+->
+
+class Dice{
+   	
+        static void printArray(int[] arr)
+	{
+		//for loop 
+	  for(int i=0;i<arr.length;i++)
+	  {
+	    System.out.println("The element at index "+i+"is"+arr[i]);
+           }
+         }
+
+        static void evenNum(int[] arr)
+	{
+           for(int i=0;i<arr.length;i++)
+	   {
+
+              //if statement
+              if(a[i]%2==0)
+              {
+                System.out.println("The element at index "+i+"is even and element is "+a[i]);
+		}
+		else{
+		System.out.println("The element at index "+i+"is odd and element is "+a[i]);
+		}
+
+	}
+}
+
+class Main{
+public static void main(String[] args)
+{
+//variables
+	int one=1;
+        int two=2;
+	int three=3;
+	int four=4;
+	int five=5;
+	int six=6;
+
+        //array
+
+        int[] dice={one,two,three,four,five,six};
+	Dice.printArray(a);
+	Dice.evenNum(a);
+}
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------Aptitude
+
+1.2,5,11,17,23,.....,41 a.29,b.31,c.39
+
+1.b)37
+2.c)20
+3.a)100
+4.d)64(but answer is 65 addition of odd numbers)
+5.c)43
+6.b)K
+7.a)P
+8.b)FR
+9.c)bccab
+10.a)GOV
+
+//pick odd man out 
+
+11.2
+12.38
+13.window
+14.sun
+15.BE
+
+
